@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  sfpdf:
+    image: aquitaine/sfrpg_pdf
+    ports:
+      - "8081:8080"
+    env_file:
+      - config/commandbox.env
