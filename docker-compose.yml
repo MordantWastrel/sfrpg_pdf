@@ -7,3 +7,7 @@ services:
       - "8081:8080"
     env_file:
       - config/commandbox.env
+    volume:
+      type: bind
+      source: /app
+      target: /app
