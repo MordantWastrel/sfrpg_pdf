@@ -14,60 +14,56 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="/css/simple-sidebar.css" rel="stylesheet">
 
 </head>
-
+<cfoutput>
 <body>
 
-    <div id="wrapper">
+    <div id="wrapper" class="toggled">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
-                        Start Bootstrap
+                    <a href="#event.buildLink(to='Main.index')#">
+                        SFRPG / FG PDF Converter
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a target="_blank" href="https://www.fantasygrounds.com/forums/forumdisplay.php?102-Starfinder">FG SFRPG Forum</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a target="_blank" href="https://paizo.com/starfinder">Pazio's Starfinder RPG</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a target="_blank" href="https://www.reddit.com/r/starfinder_rpg/comments/6w2ru4/interactive_pdf_sheets/">MidgetHerpes' PDF Sheets</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a target="_blank" href="https://www.reddit.com/r/starfinder_rpg/comments/8d83mb/starfinder_community_resource_database/">SFRPG Resources</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a target="_blank" href="#event.buildLink(to='Main.about')#">Credits / About</a>
                 </li>
             </ul>
         </div>
-        <!-- /#sidebar-wrapper -->
+        <!--- /#sidebar-wrapper --->
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-                <h1>Simple Sidebar</h1>
-                <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
-            </div>
+				#renderView()#
+				<hr />
+				<div class="row mt-4">
+					<a href="##menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>		
+				</div>
+			</div>
+			
         </div>
-        <!-- /#page-content-wrapper -->
+        <!--- /##page-content-wrapper --->
 
     </div>
-    <!-- /#wrapper -->
+    <!--- /#wrapper --->
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -75,12 +71,12 @@
 
     <!-- Menu Toggle Script -->
     <script>
-    $("#menu-toggle").click(function(e) {
+    $("##menu-toggle").click(function(e) {
         e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
+        $("##wrapper").toggleClass("toggled");
     });
     </script>
 
 </body>
-
+</cfoutput>
 </html>

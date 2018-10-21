@@ -1,13 +1,7 @@
-﻿/**
-* Copyright 2005-2007 ColdBox Framework by Luis Majano and Ortus Solutions, Corp
-* www.ortussolutions.com
-* ---
-*/
-component{
+﻿component{
 	// Application properties
-	this.name = hash( getCurrentTemplatePath() );
-	this.sessionManagement = true;
-	this.sessionTimeout = createTimeSpan(0,0,30,0);
+	this.name = 'SFPDF_Converter';
+	this.sessionManagement = false;
 	this.setClientCookies = true;
 
 	// COLDBOX STATIC PROPERTY, DO NOT CHANGE UNLESS THIS IS NOT THE ROOT OF YOUR COLDBOX APP

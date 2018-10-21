@@ -1,10 +1,12 @@
 {
     "dependencies":{
-        "cffractal":"^0.0.0-semantic-released",
+        "cbmessagebox":"^3.0.0+35",
+        "cffractal":"^7.0.0",
         "coldbox":"^5.0.0"
     },
     "installPaths":{
-        "cffractal":"modules/cffractal",
+        "cbmessagebox":"modules/cbmessagebox",
+        "cffractal":"modules/cffractal/",
         "coldbox":"coldbox/"
     }
 }
