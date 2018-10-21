@@ -1,0 +1,282 @@
+[
+    {
+        "name": "Character Name",
+        "in": "name",
+        "out": "Character Name"
+    },
+    {
+        "name": "Class",
+        "in": "classlevel",
+        "out": "Class"
+    },
+    {
+        "name": "Level",
+        "in": "level",
+        "out": "Level"
+    },
+    {
+        "name": "Race",
+        "in": "race",
+        "out": "Race"
+    },
+    {
+        "name": "Theme",
+        "in": "theme",
+        "out": "Theme"
+    },
+    {
+        "name": "Gender",
+        "in": "gender",
+        "out": "Gender"
+    },
+    {
+        "name": "Size",
+        "in": "size",
+        "out": "Size"
+    },
+    {
+        "name": "Deity",
+        "in": "deity",
+        "out": "Deity"
+    },
+    {
+        "name": "Speed",
+        "in": "speed.total",
+        "out": "Speed"
+    },
+    {
+        "name": "Homeworld",
+        "in": "homeworld",
+        "out": "Homeworld"
+    },
+    {
+        "name": "Initiative Total",
+        "in": "initiative.total",
+        "out": "TotInit"
+    },
+    {
+        "name": "Initiative Dex Mod",
+        "in": "initiative.abilitymod",
+        "out": "DevModIni"
+    },
+    {
+        "name": "Initiative Misc Mod",
+        "in": "initiative.misc",
+        "out": "MiscModIni"
+    },
+    {
+        "name": "Stamina Points (Total)",
+        "in": "sp.total",
+        "out": "TotStamina"
+    },
+    {
+        "name": "Stamina Points (Current)",
+        "in": "sp.current",
+        "out": "CurrStamina"
+    },
+    {
+        "name": "Hit Points (Total)",
+        "in": "hp.total",
+        "out": "TotHP"
+    },
+    {
+        "name": "Hit Points (Current)",
+        "in": "hp.current",
+        "out": "CurrHP"
+    },
+    {
+        "name": "Resolve Points (Total)",
+        "in": "rp.total",
+        "out": "TotResolve"
+    },
+    {
+        "name": "Resolve Points (Current)",
+        "in": "rp.current",
+        "out": "CurrResolve"
+    },
+    {
+        "name": "Appearance (1)",
+        "in": "appearance1",
+        "out": "Description"
+    },
+    {
+        "name": "Appearance (2)",
+        "in": "appearance2",
+        "out": "Description0"
+    },
+    {
+        "name": "Appearance (3)",
+        "in": "appearance3",
+        "out": "Description1"
+    },
+    {
+        "name": "Apperance (4)",
+        "in": "appearance4",
+        "out": "Description2"
+    },
+    {
+        "name": "Alignment",
+        "in": "alignment",
+        "out": "Alignment"
+    },
+    {
+        "name": "Strength Base",
+        "in": "abilitiesedit.strength.base",
+        "out": "STR"
+    },
+    {
+        "name": "Strength Mod",
+        "in": "abilitiesedit.strength.mod",
+        "out": "STRMod"
+    },
+    {
+        "name": "Upgraded Strength Base",
+        "in": "abilities.strength.score",
+        "out": "STRupScore"
+    },
+    {
+        "name":"Upgraded Strength Bonus",
+        "in": "abilities.strength.bonus",
+        "out": "STRupMod"
+    },
+    {
+        "name": "Dexterity Base",
+        "in":  "abilitiesedit.dexterity.base",
+        "out": "DEX"
+    },
+    {
+        "name": "Dexterity Mod",
+        "in" : "abilitiesedit.dexterity.mod",
+        "out" : "DEXMod"
+    },
+    {
+        "name": "Upgraded Dexterity Base",
+        "in": "abilities.dexterity.score",
+        "out": "DEXupScore"
+    },
+    {
+        "name": "Upgraded Dexterity Bonus",
+        "in": "abilities.dexterity.bonus",
+        "out": "DEXupMod"
+    },
+    {
+        "name": "Constitution Base",
+        "in": "abilitiesedit.constitution.base",
+        "out": "CON"
+    },
+    {
+        "name": "Constitution Mod",
+        "in": "abilitiesedit.constitution.mod",
+        "out": "CONMod"
+    },
+    {
+        "name": "Upgraded Constitution Base",
+        "in": "abilities.constitution.score",
+        "out": "CONupScore"
+    },
+    {
+        "name": "Upgraded Constitution Bonus",
+        "in": "abilities.constitution.bonus",
+        "out": "CONupMod"
+    },
+    {
+        "name": "Intelligence Base",
+        "in": "abilitiesedit.intelligence.base",
+        "out": "INT"
+    },
+    {
+        "name": "Intelligence Mod",
+        "in": "abilitiesedit.intelligence.mod",
+        "out": "INTMod"
+    },
+    {
+        "name": "Upgraded Intelligence Base",
+        "in": "abilities.intelligence.score",
+        "out": "INTupScore"
+    },
+    {
+        "name": "Upgraded Intelligence Bonus",
+        "in": "abilities.intelligence.bonus",
+        "out": "INTupMod"
+    },
+    {
+        "name": "Wisdom Base",
+        "in": "abilitiesedit.wisdom.base",
+        "out": "WIS"
+    },
+    {
+        "name": "Wisdom Mod",
+        "in": "abilitiesedit.wisdom.mod",
+        "out": "WISMod"
+    },
+    {
+        "name": "Upgraded Wisdom Base",
+        "in": "abilities.wisdom.score",
+        "out": "WISupScore"
+    },
+    {
+        "name": "Upgraded Wisdom Bonus",
+        "in": "abilities.wisdom.bonus",
+        "out": "WISupMod"
+    },
+    {
+        "name": "Charisma Base",
+        "in": "abilitiesedit.charisma.base",
+        "out": "CHA"
+    },
+    {
+        "name": "Charisma Mod",
+        "in": "abilitiesedit.charisma.mod",
+        "out": "CHAMod"
+    },
+    {
+        "name": "Upgraded Charisma Base",
+        "in": "abilities.charisma.score",
+        "out": "CHAupScore"
+    },
+    {
+        "name": "Upgraded Charisma Bonus",
+        "in": "abilities.charisma.bonus",
+        "out": "CHAupMod"
+    },
+    {
+        "name": "EAC Total",
+        "in": "ac.totals.eac",
+        "out": "TotEAC"
+    },
+    {
+        "name": "EAC Armor Bonus",
+        "in": "ac.sources.eac.armor",
+        "out": "EACBonus"
+    },
+    {
+        "name": "EAC Dex Mod",
+        "in": "ac.sources.calculatedDexBonus",
+        "out": "EACDex"
+    },
+    {
+        "name": "EAC Misc Mod",
+        "in": "ac.sources.cmbmisc",
+        "out": "EACMisc"
+    },
+    {
+        "name": "KAC Total",
+        "in": "ac.totals.kac",
+        "out": "TotKAC"
+    },
+    {
+        "name": "KAC Armor Bonus",
+        "in": "ac.sources.kac.armor",
+        "out": "KACBonus"
+    },
+    {
+        "name": "KAC Dex Mod",
+        "in": "ac.sources.calculatedDexBonus",
+        "out": "KACDex"
+    },
+    {
+        "name": "KAC Misc Mod",
+        "in": "ac.sources.cmbmisc",
+        "out": "KACMisc"
+    },
+]

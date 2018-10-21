@@ -3,31 +3,39 @@ component extends="coldbox.system.EventHandler"{
 	property name="messagebox" inject="messagebox@cbmessagebox";
 
 	function index( event, rc, prc ){
-		
+		var rendered = false;
 		if (event.valueExists('xmlInput') || event.valueExists('xmlFile')) {
 			if (len(rc.xmlInput))
 				if (isXML(rc.xmlInput)) {
 					try {
-						var xmldoc = xmlToStruct( xmlparse( rc.xmlInput ) );
+						var xmldoc = xmlToStruct( xmlparse( rc.xmlInput ) )["root"][1]["character"];;
 					}
 					catch (any e) {
 						messagebox.error("Input seemed like XML but XML parser failed.");
 					}
 					if (!isNull(xmldoc)){
-						xmlToPdfStruct( xmlDoc );
+						pdfProps = xmlToPdfStruct( xmlDoc );
+						rendered = true;
+						event.setView(view="main/pdfgen", args = { 'pdfProps' = pdfProps, 'pdfSource' = expandPath('/app/StarfinderCharacterSheet.pdf') }, noLayout = true ); 
 					}
 				}
 				else {
 					messagebox.error("Raw input was not valid XML.")
 				}
 			}
-		event.setView("main/index");
+		if (!rendered) event.setView("main/index");
 	}
 
 	/**** HELPER FUNCTIONS / SERVICE LAYER *****/
 
-	private function xmlToPdfStruct( required struct xmldoc ) {
-		writedump(xmldoc);
+	private struct function xmlToPdfStruct( required struct xmldoc ) {
+		var fractal = wirebox.getInstance("Manager@cffractal");
+		var pdfProps = fractal.builder()
+			.item( xmldoc )
+			.withTransformer( "FGXMLTransformer" )
+			.convert();
+		
+		return pdfProps;
 	}
 
 	private function xmlToStruct( required xml x ) hint="Takes a CF XML Object and parses it into a struct" {

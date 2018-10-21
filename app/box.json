@@ -5,7 +5,7 @@
         "coldbox":"^5.0.0"
     },
     "installPaths":{
-        "cbmessagebox":"modules/cbmessagebox",
+        "cbmessagebox":"modules/cbmessagebox/",
         "cffractal":"modules/cffractal/",
         "coldbox":"coldbox/"
     }

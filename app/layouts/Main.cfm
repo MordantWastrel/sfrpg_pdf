@@ -37,7 +37,7 @@
                     <a target="_blank" href="https://paizo.com/starfinder">Pazio's Starfinder RPG</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://www.reddit.com/r/starfinder_rpg/comments/6w2ru4/interactive_pdf_sheets/">MidgetHerpes' PDF Sheets</a>
+                    <a target="_blank" href="https://www.reddit.com/r/starfinder_rpg/comments/6w2ru4/interactive_pdf_sheets/">Schwar's PDF Sheets</a>
                 </li>
                 <li>
                     <a target="_blank" href="https://www.reddit.com/r/starfinder_rpg/comments/8d83mb/starfinder_community_resource_database/">SFRPG Resources</a>
